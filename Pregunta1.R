@@ -43,5 +43,8 @@ c(xbar-t005*s/sqrt(n),xbar+t005*s/sqrt(n))
 t.test(x,conf.level=0.99) #pel t.test necessitem les observacions 
 
 
-#hipotesis
+#hipotesis dos colas
 t.test(x,alternative="two.sided", conf.level=0.99, mu=500)
+
+#hipotesis cola superior
+t.test(x,alternative="greater", conf.level=0.99, mu=500)
